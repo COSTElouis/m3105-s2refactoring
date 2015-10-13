@@ -1,8 +1,6 @@
  package MarkEtVous.model;
 
-import java.awt.List;
 import java.io.File;
-import java.util.Scanner;
 
 import MarkEtVous.view.IHM;
 
@@ -34,9 +32,11 @@ public class MarketVous
 	public void addMarks()
 	{
 		SpinneretType choosenSpinneret = this.myIHM.inputTitleSpinneret();
-		if (choosenSpinneret!=null){
+		if (choosenSpinneret!=null)
+		{
 		File fileSpinneret = this.myIHM.inputSemester(choosenSpinneret);
-			if (fileSpinneret!=null) {
+			if (fileSpinneret!=null) 
+			{
 				this.spinneret= new Spinneret(choosenSpinneret, fileSpinneret);
 				int index =0;
 				for (index=0; index < this.spinneret.getListOfSubject().size();index++) 
@@ -47,7 +47,8 @@ public class MarketVous
 					this.myIHM.displayListOfMarks(currentSubject.getListOfMark());	
 						
 				}
-				if (index ==this.spinneret.getListOfSubject().size()) {
+				if (index ==this.spinneret.getListOfSubject().size()) 
+				{
 					this.myIHM.displayListOfMarksWithSubjects(this.spinneret.getListOfSubject());
 					this.calculateAverage();
 				}

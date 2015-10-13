@@ -1,6 +1,6 @@
 package MarkEtVous.model;
-import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 /**
  * The class who define a Subject
  * @author Jondet Guezel Coste Litzenburger
@@ -25,7 +25,7 @@ public class Subject
 	/**
 	 * A list of mark of a Subject
 	 */
-	public  ArrayList<Mark> listOfMark;
+	public List<Mark> listOfMark;
 	
 	
 	
@@ -61,7 +61,7 @@ public class Subject
 	 * Getter of list of mark
 	 * @return listOfMark
 	 */
-	public ArrayList<Mark> getListOfMark() {
+	public List<Mark> getListOfMark() {
 		return listOfMark;
 	}
 
@@ -69,7 +69,7 @@ public class Subject
 	 * Setter of list of mark
 	 * @param listOfMark
 	 */
-	public void setListOfMark(ArrayList<Mark> listOfMark) {
+	public void setListOfMark(List<Mark> listOfMark) {
 		this.listOfMark = listOfMark;
 	}
 
